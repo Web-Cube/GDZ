@@ -1,0 +1,36 @@
+.breadcrumbs {
+	margin-top: 30rem;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	background: #D1ECF1;
+	border-radius: 20px;
+	padding: 5rem 20rem;
+	height: 26rem;
+	align-items: center;
+	list-style: none;
+	font-size: 12rem;
+	line-height: 15rem;
+	display: inline-flex;
+	
+	&__item {
+		display: inline;
+		&:not(:last-child) {
+			margin-right: 10rem;
+			padding-right: 21rem;
+			background: url(/img/arrow-right.svg) right no-repeat;
+			background-size: 11rem auto;
+		}
+		a {
+			color: #6E9CA5;
+		}
+	}
+	&-wrap {
+		overflow-x: scroll;
+		overflow-y: visible;
+	}
+	
+	@include max-screen($large_mobile) {
+		display: block;
+	}
+}

@@ -1,0 +1,130 @@
+.blog {
+	&_vertical {
+		.blog__item {
+			&:not(:last-child) {
+				margin-bottom: 10rem;
+			}
+		}
+	}
+	&__item {
+		display: block;
+		padding: 10rem;
+		border-radius: 15rem;
+		background: #E0F2F6;
+		color: #353535;
+		max-width: 277rem;
+	}
+	&__head {
+		display: flex;
+	}
+	&__preview {
+		width: 85rem;
+		min-width: 85rem;
+		margin-right: 11rem;
+		border-radius: 15rem;
+		overflow: hidden;
+	}
+	&__title {
+		font-size: 13rem;
+		line-height: 20rem;
+		font-weight: bold;
+		padding-top: 6rem;
+		display: block;
+	}
+	
+	&__desc {
+		display: block;
+		margin-top: 8rem;
+		font-weight: 500;
+		font-size: 10rem;
+		line-height: 16rem;
+	}
+	
+	&__date {
+		display: block;
+		margin-top: 6rem;
+		font-weight: 600;
+		font-size: 10rem;
+		line-height: 16rem;
+	}
+	
+	.column_sidebar {
+		margin-top: 87rem;
+	}
+	
+	.column_content {
+		margin-top: 25rem;
+	}
+	
+	&__title-wrap {
+		text-align: center;
+		.title {
+			width: 100%;
+			max-width: 327rem;
+		}
+	}
+	
+	&__btn-wrap {
+		margin-top: 30rem;
+		text-align: center;
+	}
+	
+	&__btn {
+		width: 100%;
+		max-width: 280rem;
+	}
+	
+	&_page {
+		.title {
+			margin-top: 25rem;
+			&_small {
+				max-width: 146rem;
+			}
+		}
+	}
+	&__list {
+		padding-top: 10rem;
+		margin-left: -20rem;
+		.blog__item {
+			width: calc( 25% - 20rem );
+			margin-left: 20rem;
+			margin-top: 15rem;
+			max-width: none;
+		}
+	}
+	
+	@include max-screen($small_tablet) {
+		&__list {
+			.blog__item {
+				width: calc( 33.33% - 20rem );
+			}
+		}
+	}
+	
+	@include max-screen($large_mobile) {
+		&__title {
+			font-size: 12px;
+		}
+		&__title-wrap {
+			.title {
+				width: auto;
+				max-width: auto;
+			}
+		}
+		.column_content {
+			margin-top: 0;
+			padding-top: 15px;
+		}
+		.column_sidebar {
+			margin-top: 20px;
+		}
+		&__headline {
+			margin-top: 20px;
+		}
+		&__list {
+			.blog__item {
+				width: calc( 100% - 20rem );
+			}
+		}
+	}
+}

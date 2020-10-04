@@ -1,0 +1,38 @@
+.row {
+	margin-left: -10rem;
+	margin-right: -10rem;
+	display: flex;
+	@include max-screen($small_tablet) {
+		flex-wrap: wrap;
+		margin: 0;
+	}
+}
+
+.column {
+	padding: 0 10rem;
+	&_content {
+		width: 100%;
+	}
+	&_sidebar {
+		width: 297rem;
+		min-width: 297rem;
+	}
+	
+	@include max-screen($small_tablet) {
+		padding: 0;
+		&_content, &_sidebar {
+			width: 100%;
+		}
+		&_sidebar {
+			margin-top: 60px;
+			min-width: inherit;
+			.list-book.owl-carousel {
+				margin-right: -20px;
+				width: calc(100% + 20px);
+				.owl-dots {
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+}

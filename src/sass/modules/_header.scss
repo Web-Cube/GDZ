@@ -4,6 +4,7 @@
 	height: 96rem;
 	position: relative;
 	padding-top: 24rem;
+	z-index: 100;
 	&__bottom-bg {
 		position: absolute;
 		left: 0;
@@ -146,7 +147,15 @@
 				background: #ECF9FC;
 				border-radius: 0px 0px 20px 20px;
 				padding-bottom: 30px;
-				display: none;
+				visibility: hidden;
+				opacity: 0;
+				transform: translateY(-15px);
+				transition: ease .3s;
+				&.is-active {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(0);
+				}
 			}
 		}
 		&__search-form.is-hidden {
@@ -194,6 +203,10 @@
 		}
 		&__burger {
 			display: block;
+		}
+		&__logo {
+			font-size: 14px;
+			line-height: 17px;
 		}
 	}
 	

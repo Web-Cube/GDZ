@@ -45,7 +45,16 @@ var defaults = {
 		
 		$('.js-show-mobile').click(function(){
 			$(this).toggleClass('is-active');
-			$('.js-mobile-menu').fadeToggle(300);
+			$('.js-mobile-menu').toggleClass('is-active');
+		});
+		
+		$('.cat__head').click(function(){
+			if ( $(this).parent().hasClass('is-active') ) {
+				$(this).parent().removeClass('is-active');
+			} else {
+				$('.cat__item.is-active').removeClass('is-active');
+				$(this).parent().addClass('is-active');
+			}
 		});
 
 	}

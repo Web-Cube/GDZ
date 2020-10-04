@@ -1,0 +1,46 @@
+.bottom {
+	margin-top: 150rem;
+	&__about {
+		&-title {
+			margin-bottom: 24rem;
+			min-width: 134rem;
+		}
+	}
+	&__blog {
+		&-title {
+			margin-bottom: 20rem;
+			.title {
+				width: 100%;
+			}
+		}
+	}
+	
+	&__btn {
+		width: 100%;
+		max-width: 277rem;
+		margin-top: 15rem;
+	}
+	
+	.column_sidebar, .column_content {
+		margin-top: 0;
+	}
+	
+	@include max-screen($small_tablet) {
+		margin-top: 50px;
+		&__btn-wrap {
+			text-align: center;
+		}
+		&__blog {
+			margin-right: -20px;
+			width: calc(100% + 20px);
+			&-title {
+				margin-bottom: 20rem;
+				.title {
+					width: auto;
+				}
+			}.owl-dots {
+				padding-right: 20px;
+			}
+		}
+	}
+}

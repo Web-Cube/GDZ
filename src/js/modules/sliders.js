@@ -107,21 +107,6 @@ var sliders = {
 			})
 			.owlCarousel(current);
 		
-		if ( $(sliders.selector).hasClass('js-product-slider') ) {
-
-			console.log('.js-product-slider');
-			
-			$('.js-product-slider').on('changed.owl.carousel', event => {
-				let $slider = $(event.target);
-				let $parent = $slider.closest('.js-slider-parent');
-
-				let carousel = event.relatedTarget;
-				let current = carousel.relative(carousel.current());
-
-				$parent.find('.js-product-thumbnails').sly('activate', current);
-			})
-		}
-		
 	},
 
 	destroy: (selector) => {
@@ -135,23 +120,6 @@ var sliders = {
 	run: (selector) => {
 		sliders.build(selector);
 	},
-	
-	resize: () => {
-		
-		if ( $(sliders.selector).hasClass("owl-resize") && ( $(window).innerWidth() > 1100 ) ) {
-			
-			let bigSelector = $('.blog__item_big');
-			let smallSelector = $('.blog__item_small');
-			let containerWidth = $(sliders.selector).innerWidth();
-			
-			bigSelector.css('width', (containerWidth/2) - 15);
-			
-			smallSelector.css('width', (containerWidth/4) - 23);
-			
-		} else {
-			$('.blog__item').css('width','');
-		}
-	},
 
 	init: () => {
 		if (!$(sliders.selector).length) return false;
@@ -161,10 +129,6 @@ var sliders = {
 				sliders.run(el);
 			});
 		});
-		
-		sliders.resize();
-			
-		$(window).on('resize', sliders.resize);
 	},
 };
 

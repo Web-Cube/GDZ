@@ -2,14 +2,70 @@
 .p,
 .content li,
 .li {
-	font-size: 14rem;
-	line-height: (26/14) * 1;
+	font-size: 16rem;
+	line-height: (26/16) * 1;
 }
 
 .content_big {
 	p, li {
 		font-size: 16rem;
 		line-height: 26/16*1;
+	}
+}
+
+.content {
+	p, ul, ol {
+		&:not(:last-child) {
+			margin-bottom: 20rem;
+		}
+	}
+	ul {
+		list-style: none;
+		li {
+			&:not(:last-child) {
+				margin-bottom: 15rem;
+			}
+		}
+		li {
+			position: relative;
+			padding-left: 28rem;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 13rem;
+				height: 13rem;
+				background: url(/img/dot.svg) 0 0 no-repeat;
+				background-size: 100% 100%;
+				left: 0;
+				top: 5rem;
+			}
+		}
+	}
+	@include max-screen($large_mobile) {
+		p, li {
+			font-size: 12px;
+			line-height: 21px;
+		}
+		p, ul, ol {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		p, ul, ol {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		ul {
+			li {
+				padding-left: 16px;
+				&:before {
+					width: 7px;
+					height: 7px;
+				}
+			}
+		}
 	}
 }
 
@@ -79,4 +135,19 @@
 
 .h6,
 .content h6 {
+}
+
+
+@include max-screen($large_mobile) {
+	.h1,
+	.content h1 {
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.h2,
+	.content h2 {
+		font-size: 12px;
+		line-height: 15px;
+	}
 }

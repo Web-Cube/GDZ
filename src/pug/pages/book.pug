@@ -1,0 +1,103 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Блог';
+
+block content
+	+b.blog._page
+		+e.wrap.wrap
+			+e.breadcrumbs.UL.breadcrumbs__
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Переводчик
+			+e.title-wrap.title-wrap.m-visible
+				+e.H1.headline.h1.title Блог
+			+e.title-wrap.title-wrap.m-hidden
+				+e.H1.headline.h1.title._small Блог
+			+e.list.blog__._horizontal.flex
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+				+e.A.item(href="#")
+					+e.head
+						+e.preview
+							img(src="/img/post__preview.jpg")
+						+e.title
+							| Как писать эссе: правила и примеры
+					+e.desc
+						| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+					+e.date
+						| 24.09.2020
+			+e.btn-wrap
+				+e.A.btn.btn__(href="#")
+					+e.text
+						| еще статьи
+			include ../layouts/bottom

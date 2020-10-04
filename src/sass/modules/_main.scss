@@ -1,0 +1,17 @@
+.main {
+	padding-top: 50rem;
+	&__title {
+		margin-bottom: 25rem;
+		&_table {
+			min-width: 270rem;
+		}
+	}
+	@include max-screen($large_mobile) {
+		&__title {
+			margin-bottom: 20px;
+			&_table {
+				min-width: inherit;
+			}
+		}
+	}
+}

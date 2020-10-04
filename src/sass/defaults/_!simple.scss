@@ -25,6 +25,9 @@ body {
 	@include max-screen($large_tablet) {
 		font-size: 0.85px;
 	}
+	@include max-screen($large_mobile) {
+		font-size: 1px;
+	}
 }
 body {
 	position: relative;
@@ -40,6 +43,8 @@ body {
 
 .main-wrap {
 	font-size: 16rem;
+	background: url(/img/main-wrap_bg.png) 50% 180rem no-repeat;
+	background-size: auto 1787rem;
 }
 
 input,
@@ -198,4 +203,34 @@ svg {
 	fill: none;
 	stroke: #919191;
 	stroke-width: 1.2;
+}
+
+.title {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem 20rem;
+	min-height: 38rem;
+	background: #fff;
+	border-radius: 20px;
+	@include max-screen($large_mobile) {
+		min-height: 24px;
+		padding: 4px 15px;
+		&-wrap {
+			text-align: center;
+		}
+	}
+}
+
+.m-visible {
+	display: none;
+}
+
+@include max-screen($large_mobile) {
+	.m-hidden {
+		display: none;
+	}
+	.m-visible {
+		display: block;
+	}
 }
