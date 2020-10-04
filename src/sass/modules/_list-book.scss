@@ -11,6 +11,10 @@
 			margin-top: 25rem;
 		}
 	}
+	&.owl-carousel {
+		margin-right: -20px;
+		width: calc( 100% + 20px );
+	}
 	&__item {
 		display: flex;
 		max-width: 279rem;

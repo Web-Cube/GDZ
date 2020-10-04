@@ -98,6 +98,15 @@
 			.blog__item {
 				width: calc( 33.33% - 20rem );
 			}
+			&.owl-carousel {
+				margin-left: 0;
+				margin-right: -20px;
+				width: calc(100% + 20px);
+				.blog__item {
+					width: 277rem;
+					margin-left: 0;
+				}
+			}
 		}
 	}
 	
@@ -122,8 +131,17 @@
 			margin-top: 20px;
 		}
 		&__list {
+			margin-left: 0;
 			.blog__item {
 				width: calc( 100% - 20rem );
+				margin-left: 0;
+			}
+		}
+		&__cat {
+			padding: 0;
+			overflow: hidden;
+			&:not(:first-child) {
+				margin-top: 15px;
 			}
 		}
 	}

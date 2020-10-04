@@ -56,6 +56,55 @@ var defaults = {
 				$(this).parent().addClass('is-active');
 			}
 		});
+		
+		$('.js-more-btn').click(function(){
+			$(this).toggleClass("is-active");
+			$('.js-more-text').toggleClass('is-open');
+			return false;
+		});
+		
+		$('.js-accordion-head').click(function(){
+			$(this).parent().toggleClass('is-active');
+		});
+		
+		
+		$('.accordion__list').each(function () {
+			var accordList = $(this);
+			accordList.find('.accordion__number').each(function () {
+				if ($.trim($(this).html()).length >= 6) {
+					$(this).parent().addClass('is-row');
+				}
+			});
+		});
+		
+		// search book
+		$('.js-search-lesson').on('input', function () {
+			$('.js-accordion-item').removeClass('is-active');
+			$('.js-accordion-body').removeAttr('style');
+			$('.accordion__list > .accordion__list-item').css({ display: 'block' });
+
+			var query = $.trim($(this).val()).toLowerCase();
+
+			if (query !== '') {
+				$('.accordion .accordion__number').each(function () {
+					var name = $.trim($(this).html()).toLowerCase();
+
+					if (name.includes(query)) {
+						$(this).parents('.js-accordion-body').each(function () {
+							$(this).css({ display: 'block' });
+
+							if (!$(this).closest('.js-accordion-item').hasClass('is-active')) {
+								$(this).closest('.js-accordion-item').addClass('is-active');
+							}
+						});
+						$(this).parent().css({ display: 'block' });
+					} else {
+						$(this).parent().css({ display: 'none' });
+					}
+				});
+			}
+		});
+		
 
 	}
 }

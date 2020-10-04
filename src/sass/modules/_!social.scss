@@ -1,0 +1,49 @@
+.social {
+	display: flex;
+	align-items: center;
+	&__text {
+		font-size: 14rem;
+		line-height: 17rem;
+		font-weight: 600;
+		margin-right: 30rem;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		fill: #246B79;
+		height: auto;
+		&:not(:last-child) {
+			margin-right: 20rem;
+		}
+		.icon-od {
+			width: 10rem;
+			height: 18rem;
+		}
+		.icon-vk {
+			width: 18rem;
+			height: 11rem;
+			margin-top: 3rem;
+		}
+		.icon-fb {
+			width: 10rem;
+			height: 16rem;
+		}
+		.icon-twitter {
+			width: 18rem;
+			height: 15rem;
+		}
+	}
+	@include max-screen($large_mobile) {
+		&__text {
+			font-size: 12px;
+			margin-right: 0;
+		}
+		&__item {
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+		}
+	}
+}

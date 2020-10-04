@@ -1,0 +1,96 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Страница записи';
+
+block content
+	+b.post
+		+e.wrap.wrap
+			+e.breadcrumbs.UL.breadcrumbs__
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					a(href="#") Блог
+				+e.LI.item
+					| Как писать эссе: правила и примеры
+			+e.title-wrap.title-wrap
+				+e.H1.headline.h1.title Как писать эссе: правила и примеры
+			+e.content.content
+				+e.preview
+					img(src="/img/post__preview_big.jpg")
+				p
+					strong
+						|      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				p
+					|      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				ul
+					li 
+						| Учитель работает спустя рукава и непонятно объясняет новый материал? С выложенными онлайн ГДЗ разобраться с пройденными темами будет легко и просто.
+					li
+						| Ученик пропустил уроки из-за болезни, спортивного соревнования, концерта, танцевального конкурса? Тогда ему надо открыть решебник и узнать ответы на изученные одноклассниками вопросы и поэтапные действия сделанных в классе задач.
+					li
+						| Школьник учится неплохо, но ему не даются точные науки или бывают сложности с изучением родного и иностранного языка? Тогда ГДЗ помогут повысить отметки по трудным дисциплинам и заработать репутацию прилежного и ответственного учащегося.
+					li
+						| У родителей нет денег на оплату дорогостоящих репетиционных услуг? Тогда с решебниками ребенок самостоятельно подготовится к тестам, проверочным, диктантам, контрольным, экзаменам.
+				ol
+					li 
+						| Учитель работает спустя рукава и непонятно объясняет новый материал? С выложенными онлайн ГДЗ разобраться с пройденными темами будет легко и просто.
+					li
+						| Ученик пропустил уроки из-за болезни, спортивного соревнования, концерта, танцевального конкурса? Тогда ему надо открыть решебник и узнать ответы на изученные одноклассниками вопросы и поэтапные действия сделанных в классе задач.
+					li
+						| Школьник учится неплохо, но ему не даются точные науки или бывают сложности с изучением родного и иностранного языка? Тогда ГДЗ помогут повысить отметки по трудным дисциплинам и заработать репутацию прилежного и ответственного учащегося.
+					li
+						| У родителей нет денег на оплату дорогостоящих репетиционных услуг? Тогда с решебниками ребенок самостоятельно подготовится к тестам, проверочным, диктантам, контрольным, экзаменам.
+			+e.bottom
+				+e.title-wrap.title-wrap
+					+e.H1.headline.h1.title Популярные статьи
+				+e.blog.blog__
+					+e.list.blog__._horizontal.flex.js-wrapSlider(data-resolution='810', data-settings=`{
+									"smartSpeed": 500,
+									"items": 1,
+									"margin": 12,
+									"center": false,
+									"nav": false,
+									"autoWidth": true,
+									"dots": true
+								}`,)
+						+e.A.item(href="#")
+							+e.head
+								+e.preview
+									img(src="/img/post__preview.jpg")
+								+e.title
+									| Как писать эссе: правила и примеры
+							+e.desc
+								| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+							+e.date
+								| 24.09.2020
+						+e.A.item(href="#")
+							+e.head
+								+e.preview
+									img(src="/img/post__preview.jpg")
+								+e.title
+									| Как писать эссе: правила и примеры
+							+e.desc
+								| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+							+e.date
+								| 24.09.2020
+						+e.A.item(href="#")
+							+e.head
+								+e.preview
+									img(src="/img/post__preview.jpg")
+								+e.title
+									| Как писать эссе: правила и примеры
+							+e.desc
+								| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+							+e.date
+								| 24.09.2020
+						+e.A.item(href="#")
+							+e.head
+								+e.preview
+									img(src="/img/post__preview.jpg")
+								+e.title
+									| Как писать эссе: правила и примеры
+							+e.desc
+								| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+							+e.date
+								| 24.09.2020

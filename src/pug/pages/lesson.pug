@@ -1,0 +1,486 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Страница урока 1';
+
+block content
+	+b.lesson
+		+e.wrap.wrap
+			+e.breadcrumbs.UL.breadcrumbs__
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					a(href="#") Украинский язык 10 класс
+				+e.LI.item
+					| Как писать эссе: правила и примеры
+			+e.head
+				+e.title-wrap.title-wrap.m-hidden
+					+e.H1.headline.h1.title Украинский язык 10 класс, П.П. Попель, Л.С. Крикля
+				.m-hidden
+					+e.social.social__
+						+e.text Поделиться решебником
+						+e.list
+							+e.item(href="#")
+								+icon('od')
+							+e.item(href="#")
+								+icon('vk')
+							+e.item(href="#")
+								+icon('fb')
+							+e.item(href="#")
+								+icon('twitter')
+			+e.top
+				+e.preview
+					img(src="/img/book.jpg")
+				+e.top-content
+					+e.FORM.search-form.search-form__.m-hidden(action="#")
+						+e.INPUT.input.js-search-lesson(name="search", type="text", placeholder="Поиск")
+						+e.BUTTON.btn.js-show-form(type="button")
+							+icon('search')
+					+e.title-wrap.title-wrap.m-visible
+						+e.H1.headline.h1.title Украинский язык 10 класс, П.П. Попель, Л.С. Крикля
+					+e.top-title
+						strong Авторы: 
+						| П.П. Попель, Л.С. Крикля
+					+e.top-title
+						strong Издательство: 
+						| МОН
+					.m-hidden
+						+e.top-desc.js-more-text
+							| Описание: Процесс обучения для первоклассника стараются делать максимально простым и понятным, поэтому дополнительно к учебнику педагог использует рабочие тетради. Они насыщены красочными иллюстрациями, чтобы ребенок мог искать ответы к заданиям, опираясь на знакомый предметный мир. Хотите помочь первокласснику – обратите внимание на ГДЗ по математике 1 класс Петерсон. Здесь можно почерпнуть много интересной информации. Решебник составлен в доступной форме – все шаги подробно объясняются, сопровождаются схемами и рисунками.ФГОС 
+							| Процесс обучения для первоклассника стараются делать максимально простым и понятным, поэтому дополнительно к учебнику педагог использует рабочие тетради. Они насыщены красочными иллюстрациями, чтобы ребенок мог искать ответы к заданиям, опираясь на знакомый предметный мир. Хотите помочь первокласснику – обратите внимание на ГДЗ по математике 1 класс Петерсон. Здесь можно почерпнуть много интересной информации. Решебник составлен в доступной форме – все шаги подробно объясняются, сопровождаются схемами и рисунками.ФГОС 
+						+e.read-more-wrap.read-more-wrap.flex._right
+							+e.A.read-more.read-more__.js-more-btn(href="#", data-text-show="Читать далее", data-text-hide="Свернуть")
+			.m-visible
+				+e.social.social__
+					+e.text Поделиться решебником
+					+e.list
+						+e.item(href="#")
+							+icon('od')
+						+e.item(href="#")
+							+icon('vk')
+						+e.item(href="#")
+							+icon('fb')
+						+e.item(href="#")
+							+icon('twitter')
+			.m-visible
+				+e.top-desc.js-more-text
+					| Описание: Процесс обучения для первоклассника стараются делать максимально простым и понятным, поэтому дополнительно к учебнику педагог использует рабочие тетради. Они насыщены красочными иллюстрациями, чтобы ребенок мог искать ответы к заданиям, опираясь на знакомый предметный мир. Хотите помочь первокласснику – обратите внимание на ГДЗ по математике 1 класс Петерсон. Здесь можно почерпнуть много интересной информации. Решебник составлен в доступной форме – все шаги подробно объясняются, сопровождаются схемами и рисунками.ФГОС 
+					| Процесс обучения для первоклассника стараются делать максимально простым и понятным, поэтому дополнительно к учебнику педагог использует рабочие тетради. Они насыщены красочными иллюстрациями, чтобы ребенок мог искать ответы к заданиям, опираясь на знакомый предметный мир. Хотите помочь первокласснику – обратите внимание на ГДЗ по математике 1 класс Петерсон. Здесь можно почерпнуть много интересной информации. Решебник составлен в доступной форме – все шаги подробно объясняются, сопровождаются схемами и рисунками.ФГОС 
+				+e.read-more-wrap.read-more-wrap.flex._right
+					+e.A.read-more.read-more__.js-more-btn(href="#", data-text-show="Читать далее", data-text-hide="Свернуть")
+			+e.FORM.search-form.search-form__.m-visible(action="#")
+				+e.INPUT.input.js-search-lesson(name="search", type="text", placeholder="Поиск")
+				+e.BUTTON.btn(type="button")
+					+icon('search')
+			+e.accordion.accordion__
+				+e.item.js-accordion-item
+					+e.head.js-accordion-head
+						+e.head-text
+							+e.category Параграф
+							+e.paragraph 1258 - 1260
+						+e.arrow
+							+icon('arrow')
+					+e.body.js-accordion-body
+						+e.item.js-accordion-item
+							+e.head.js-accordion-head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.list
+									+e.list-item
+										+e.A.number(href="#")
+											| Измерение отрезков 
+											span 1258 - 1260
+									+e.list-item
+										+e.A.number(href="#") 4
+									+e.list-item
+										+e.A.number(href="#") 5
+									+e.list-item
+										+e.A.number(href="#") 6
+									+e.list-item
+										+e.A.number(href="#") 7
+									+e.list-item
+										+e.A.number(href="#") 8
+									+e.list-item
+										+e.A.number(href="#") 9
+									+e.list-item
+										+e.A.number(href="#") 10
+									+e.list-item
+										+e.A.number(href="#") 11
+						+e.item.js-accordion-item
+							+e.head.js-accordion-head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.list
+									+e.list-item
+										+e.A.number(href="#") 3
+									+e.list-item
+										+e.A.number(href="#") 4
+									+e.list-item
+										+e.A.number(href="#") 5
+									+e.list-item
+										+e.A.number(href="#") 6
+									+e.list-item
+										+e.A.number(href="#") 7
+									+e.list-item
+										+e.A.number(href="#") 8
+									+e.list-item
+										+e.A.number(href="#") 9
+									+e.list-item
+										+e.A.number(href="#") 10
+									+e.list-item
+										+e.A.number(href="#") 11
+						+e.item.js-accordion-item
+							+e.head.js-accordion-head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.item.js-accordion-item
+									+e.head.js-accordion-head
+										+e.head-text
+											+e.category Измерение отрезков
+											+e.paragraph 1258 - 1260
+										+e.arrow
+											+icon('arrow')
+									+e.body.js-accordion-body
+										+e.list
+											+e.list-item
+												+e.A.number(href="#") 3
+											+e.list-item
+												+e.A.number(href="#") 4
+											+e.list-item
+												+e.A.number(href="#") 5
+											+e.list-item
+												+e.A.number(href="#") 6
+											+e.list-item
+												+e.A.number(href="#") 7
+											+e.list-item
+												+e.A.number(href="#") 8
+											+e.list-item
+												+e.A.number(href="#") 9
+											+e.list-item
+												+e.A.number(href="#") 10
+											+e.list-item
+												+e.A.number(href="#") 11
+				+e.item.js-accordion-item
+					+e.head
+						+e.head-text
+							+e.category Параграф
+							+e.paragraph 1258 - 1260
+						+e.arrow
+							+icon('arrow')
+					+e.body.js-accordion-body
+						+e.item.js-accordion-item
+							+e.head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.list
+									+e.list-item
+										+e.A.number(href="#") 3
+									+e.list-item
+										+e.A.number(href="#") 4
+									+e.list-item
+										+e.A.number(href="#") 5
+									+e.list-item
+										+e.A.number(href="#") 6
+									+e.list-item
+										+e.A.number(href="#") 7
+									+e.list-item
+										+e.A.number(href="#") 8
+									+e.list-item
+										+e.A.number(href="#") 9
+									+e.list-item
+										+e.A.number(href="#") 10
+									+e.list-item
+										+e.A.number(href="#") 11
+						+e.item.js-accordion-item
+							+e.head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.list
+									+e.list-item
+										+e.A.number(href="#") 3
+									+e.list-item
+										+e.A.number(href="#") 4
+									+e.list-item
+										+e.A.number(href="#") 5
+									+e.list-item
+										+e.A.number(href="#") 6
+									+e.list-item
+										+e.A.number(href="#") 7
+									+e.list-item
+										+e.A.number(href="#") 8
+									+e.list-item
+										+e.A.number(href="#") 9
+									+e.list-item
+										+e.A.number(href="#") 10
+									+e.list-item
+										+e.A.number(href="#") 11
+						+e.item.js-accordion-item
+							+e.head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.item.js-accordion-item
+									+e.head
+										+e.head-text
+											+e.category Измерение отрезков
+											+e.paragraph 1258 - 1260
+										+e.arrow
+											+icon('arrow')
+									+e.body.js-accordion-body
+										+e.list
+											+e.list-item
+												+e.A.number(href="#") 3
+											+e.list-item
+												+e.A.number(href="#") 4
+											+e.list-item
+												+e.A.number(href="#") 5
+											+e.list-item
+												+e.A.number(href="#") 6
+											+e.list-item
+												+e.A.number(href="#") 7
+											+e.list-item
+												+e.A.number(href="#") 8
+											+e.list-item
+												+e.A.number(href="#") 9
+											+e.list-item
+												+e.A.number(href="#") 10
+											+e.list-item
+												+e.A.number(href="#") 11
+				+e.item.js-accordion-item
+					+e.head
+						+e.head-text
+							+e.category Параграф
+							+e.paragraph 1258 - 1260
+						+e.arrow
+							+icon('arrow')
+					+e.body.js-accordion-body
+						+e.item.js-accordion-item
+							+e.head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.list
+									+e.list-item
+										+e.A.number(href="#") 3
+									+e.list-item
+										+e.A.number(href="#") 4
+									+e.list-item
+										+e.A.number(href="#") 5
+									+e.list-item
+										+e.A.number(href="#") 6
+									+e.list-item
+										+e.A.number(href="#") 7
+									+e.list-item
+										+e.A.number(href="#") 8
+									+e.list-item
+										+e.A.number(href="#") 9
+									+e.list-item
+										+e.A.number(href="#") 10
+									+e.list-item
+										+e.A.number(href="#") 11
+						+e.item.js-accordion-item
+							+e.head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.list
+									+e.list-item
+										+e.A.number(href="#") 3
+									+e.list-item
+										+e.A.number(href="#") 4
+									+e.list-item
+										+e.A.number(href="#") 5
+									+e.list-item
+										+e.A.number(href="#") 6
+									+e.list-item
+										+e.A.number(href="#") 7
+									+e.list-item
+										+e.A.number(href="#") 8
+									+e.list-item
+										+e.A.number(href="#") 9
+									+e.list-item
+										+e.A.number(href="#") 10
+									+e.list-item
+										+e.A.number(href="#") 11
+						+e.item.js-accordion-item
+							+e.head
+								+e.head-text
+									+e.category Измерение отрезков
+									+e.paragraph 1258 - 1260
+								+e.arrow
+									+icon('arrow')
+							+e.body.js-accordion-body
+								+e.item.js-accordion-item
+									+e.head
+										+e.head-text
+											+e.category Измерение отрезков
+											+e.paragraph 1258 - 1260
+										+e.arrow
+											+icon('arrow')
+									+e.body.js-accordion-body
+										+e.list
+											+e.list-item
+												+e.A.number(href="#") 3
+											+e.list-item
+												+e.A.number(href="#") 4
+											+e.list-item
+												+e.A.number(href="#") 5
+											+e.list-item
+												+e.A.number(href="#") 6
+											+e.list-item
+												+e.A.number(href="#") 7
+											+e.list-item
+												+e.A.number(href="#") 8
+											+e.list-item
+												+e.A.number(href="#") 9
+											+e.list-item
+												+e.A.number(href="#") 10
+											+e.list-item
+												+e.A.number(href="#") 11
+			+e.bottom
+				+e.books
+					+e.title-wrap.title-wrap
+						+e.H1.headline.h1.title Популярные учебники
+					+e.list.list-book__._horizontal.flex._justify.js-wrapSlider(data-resolution='810', data-settings=`{
+										"smartSpeed": 500,
+										"items": 1,
+										"margin": 12,
+										"center": false,
+										"nav": false,
+										"autoWidth": true,
+										"dots": true
+									}`,)
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+				+e.popular
+					+e.title-wrap.title-wrap
+						+e.H1.headline.h1.title Популярные статьи
+					+e.blog.blog__
+						+e.list.blog__._horizontal.flex.js-wrapSlider(data-resolution='810', data-settings=`{
+										"smartSpeed": 500,
+										"items": 1,
+										"margin": 12,
+										"center": false,
+										"nav": false,
+										"autoWidth": true,
+										"dots": true
+									}`,)
+							+e.A.item(href="#")
+								+e.head
+									+e.preview
+										img(src="/img/post__preview.jpg")
+									+e.title
+										| Как писать эссе: правила и примеры
+								+e.desc
+									| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+								+e.date
+									| 24.09.2020
+							+e.A.item(href="#")
+								+e.head
+									+e.preview
+										img(src="/img/post__preview.jpg")
+									+e.title
+										| Как писать эссе: правила и примеры
+								+e.desc
+									| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+								+e.date
+									| 24.09.2020
+							+e.A.item(href="#")
+								+e.head
+									+e.preview
+										img(src="/img/post__preview.jpg")
+									+e.title
+										| Как писать эссе: правила и примеры
+								+e.desc
+									| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+								+e.date
+									| 24.09.2020
+							+e.A.item(href="#")
+								+e.head
+									+e.preview
+										img(src="/img/post__preview.jpg")
+									+e.title
+										| Как писать эссе: правила и примеры
+								+e.desc
+									| Главное – не просто раскрыть тему, но и сделать это интересно, стараясь с первого предложения захватить внимание читателя...
+								+e.date
+									| 24.09.2020

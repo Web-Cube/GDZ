@@ -42,6 +42,14 @@
 			}
 		}
 	}
+	ol {
+		margin-left: 15rem;
+		li {
+			&:not(:last-child) {
+				margin-bottom: 15rem;
+			}
+		}
+	}
 	@include max-screen($large_mobile) {
 		p, li {
 			font-size: 12px;
