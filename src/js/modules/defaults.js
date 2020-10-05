@@ -87,7 +87,14 @@ var defaults = {
 
 			if (query !== '') {
 				$('.accordion .accordion__number').each(function () {
-					var name = $.trim($(this).html()).toLowerCase();
+					
+					var html = $(this).html();
+					
+					if ( $(this).parent().hasClass('is-row') && $(this).find('.accordion__text').length ) {
+						html = $(this).find('.accordion__text').html();
+					}
+					
+					var name = $.trim(html).toLowerCase();
 
 					if (name.includes(query)) {
 						$(this).parents('.js-accordion-body').each(function () {
@@ -103,6 +110,23 @@ var defaults = {
 					}
 				});
 			}
+		});
+		
+		// Select
+		
+		$('.js-select').click(function(){
+			$(this).toggleClass("is-active");
+		});
+		
+		$('.js-select-item').click(function(){
+			let value = $(this).text();
+			$(this).closest('.js-select').find('.js-select-input').val(value);
+			$(this).closest('.js-select').find('.js-select-label').text(value);
+		});
+		
+		$('.js-lang').click(function(){
+			$(this).parent().find('.js-lang.is-active').removeClass('is-active');
+			$(this).addClass('is-active');
 		});
 		
 

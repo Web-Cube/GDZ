@@ -85,6 +85,9 @@
 	&__list {
 		padding-top: 10rem;
 		margin-left: -20rem;
+		&.list-book {
+			margin-left: 0;
+		}
 		.blog__item {
 			width: calc( 25% - 20rem );
 			margin-left: 20rem;
@@ -132,6 +135,7 @@
 		}
 		&__list {
 			margin-left: 0;
+			justify-content: center;
 			.blog__item {
 				width: calc( 100% - 20rem );
 				margin-left: 0;

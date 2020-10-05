@@ -1,0 +1,253 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Переводчик';
+
+block content
+	+b.translate
+		+e.wrap.wrap
+			+e.breadcrumbs.UL.breadcrumbs__
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Переводчик
+			+e.row.row
+				+e.column.column._content
+					+e.title-wrap.title-wrap
+						+e.title.h2.title Переводчик
+					+e.FORM.form.form-translate__(action="#")
+						+e.reverse
+							+icon('reverse')
+						+e.head
+							+e.select.js-select
+								input.js-select-input(type="hidden")
+								+e.select-head
+									+e.select-label.js-select-label Английский
+								+e.select-list
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+							+e.select.js-select
+								input.js-select-input(type="hidden")
+								+e.select-head
+									+e.select-label.js-select-label Немецкий
+								+e.select-list
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+						+e.row.flex
+							+e.column
+								+e.top
+									+e.nav
+										+e.nav-item.js-lang.is-active
+											| Определить язык
+										+e.nav-item.js-lang
+											| Английский
+										+e.nav-item.js-lang
+											| Немецкий
+										+e.nav-item.js-lang
+											| Русский
+									+e.select.js-select
+										input.js-select-input(type="hidden")
+										+e.select-head
+											+e.select-arrow
+												+icon('arrow')
+										+e.select-list
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+								+e.TEXTAREA.textarea
+							+e.column
+								+e.top
+									+e.nav
+										+e.nav-item.js-lang.is-active
+											| Английский
+										+e.nav-item.js-lang
+											| Немецкий
+										+e.nav-item.js-lang
+											| Русский
+										+e.nav-item.js-lang
+											| Украинский
+									+e.select.js-select
+										input.js-select-input(type="hidden")
+										+e.select-head
+											+e.select-arrow
+												+icon('arrow')
+										+e.select-list
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+											+e.select-item.js-select-item Русский
+								+e.textarea
+					+e.bottom-screen
+						+e.title-wrap.title-wrap
+							+e.title.h2.title Популярные переводы
+						+e.bottom-list.flex
+							+e.bottom-column
+								+e.A.lang(href="#")
+									+e.lang-text._left Русский
+									+e.lang-icon
+										+icon('arrowRight')
+										+icon('reverse')
+									+e.lang-text._right Английский
+							+e.bottom-column
+								+e.A.lang(href="#")
+									+e.lang-text._left Русский
+									+e.lang-icon
+										+icon('arrowRight')
+										+icon('reverse')
+									+e.lang-text._right Английский
+							+e.bottom-column
+								+e.A.lang(href="#")
+									+e.lang-text._left Русский
+									+e.lang-icon
+										+icon('arrowRight')
+										+icon('reverse')
+									+e.lang-text._right Английский
+							+e.bottom-column
+								+e.A.lang(href="#")
+									+e.lang-text._left Русский
+									+e.lang-icon
+										+icon('arrowRight')
+										+icon('reverse')
+									+e.lang-text._right Английский
+							+e.bottom-column
+								+e.A.lang(href="#")
+									+e.lang-text._left Русский
+									+e.lang-icon
+										+icon('arrowRight')
+										+icon('reverse')
+									+e.lang-text._right Английский
+							+e.bottom-column
+								+e.A.lang(href="#")
+									+e.lang-text._left Русский
+									+e.lang-icon
+										+icon('arrowRight')
+										+icon('reverse')
+									+e.lang-text._right Английский
+				+e.column.column._sidebar
+					+e.title-wrap.title-wrap
+						+e.title._book.h2.title Популярные учебники
+					+e.list-book.list-book__._vertical.js-wrapSlider(data-resolution='810', data-settings=`{
+							"smartSpeed": 500,
+							"items": 1,
+							"margin": 12,
+							"center": false,
+							"nav": false,
+							"autoWidth": true,
+							"dots": true
+						}`,)
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+			include ../layouts/bottom
