@@ -8,9 +8,10 @@
 	}
 	&__item {
 		display: block;
-		padding: 10rem;
+		position: relative;
+		padding: 10rem 10rem 5rem 10rem;
 		border-radius: 15rem;
-		background: #E0F2F6;
+		background: rgba(#D6EEF3, .75);
 		color: #353535;
 		max-width: 277rem;
 	}
@@ -42,10 +43,27 @@
 	
 	&__date {
 		display: block;
-		margin-top: 6rem;
+		margin-top: 11rem;
 		font-weight: 600;
 		font-size: 10rem;
 		line-height: 16rem;
+	}
+	
+	&__link {
+		width: 112rem;
+		height: 26rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		background: #EEF9FB;
+		border-radius: 15px;
+		font-size: 10rem;
+		line-height: 16rem;
+		font-weight: 600;
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 	
 	.column_sidebar {
@@ -137,7 +155,7 @@
 			margin-left: 0;
 			justify-content: center;
 			.blog__item {
-				width: calc( 100% - 20rem );
+				width: 100%;
 				margin-left: 0;
 			}
 		}

@@ -1,0 +1,237 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Конвертация';
+
+block content
+	+b.translate
+		+e.wrap.wrap
+			+e.breadcrumbs.UL.breadcrumbs__
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Конвертация
+			+e.row.row
+				+e.column.column._content
+					+e.title-wrap.title-wrap
+						+e.title.h2.title._converter Конвертация
+					+e.FORM.converter.converter__(action="#")
+						+e.field
+							+e.LABEL.label Измерение
+							+e.select.select__.js-select
+								+e.INPUT.input.js-select-input(type="hidden")
+								+e.head
+									+e.label.js-select-label Время
+									+e.arrow
+										+icon('arrow')
+								+e.list
+									+e.item.js-select-item Время
+									+e.item.js-select-item Время
+									+e.item.js-select-item Время
+									+e.item.js-select-item Время
+									+e.item.js-select-item Время
+									+e.item.js-select-item Время
+									+e.item.js-select-item Время
+						+e.field
+							+e.row.flex
+								+e.column
+									+e.LABEL.label Количество
+									+e.INPUT.input.input__(type="text")
+									+e.select.select__.js-select
+										+e.INPUT.input.js-select-input(type="hidden")
+										+e.head
+											+e.label.js-select-label Секунда
+											+e.arrow
+												+icon('arrow')
+										+e.list
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+								+e.column
+									+e.LABEL.label Результат
+									+e.INPUT.input.input__.is-error(type="text")
+									+e.select.select__.js-select
+										+e.INPUT.input.js-select-input(type="hidden")
+										+e.head
+											+e.label.js-select-label Секунда
+											+e.arrow
+												+icon('arrow')
+										+e.list
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+											+e.item.js-select-item Секунда
+					+e.bottom-screen
+						+e.title-wrap.title-wrap
+							+e.title.h2.title Популярные переводы
+						+e.bottom-list.flex
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Время
+									+e.time-bottom
+										+e.time-text._left 31 неделя в
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right сутки
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Скорость передачи данных
+									+e.time-bottom
+										+e.time-text._left 24 терабайт в секунду (TB/s) в
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right гигабайт в секунду (GB/s)
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Радиоактивность
+									+e.time-bottom
+										+e.time-text._left 712 беккерель (Бк) в 
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right килобеккерель (кБк)
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Энергия
+									+e.time-bottom
+										+e.time-text._left 5000 мегаджоуль (Мдж) в
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right килоджоуль (кдж)
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Давление
+									+e.time-bottom
+										+e.time-text._left 27 килограмм силы на квадратный сантиметр (kgf/cm²) в 
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right мегапаскаль (МПа)
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Время
+									+e.time-bottom
+										+e.time-text._left 31 неделя в
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right сутки
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Скорость передачи данных
+									+e.time-bottom
+										+e.time-text._left 24 терабайт в секунду (TB/s) в
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right гигабайт в секунду (GB/s)
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Радиоактивность
+									+e.time-bottom
+										+e.time-text._left 712 беккерель (Бк) в 
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right килобеккерель (кБк)
+							+e.bottom-column._big
+								+e.time
+									+e.time-title Энергия
+									+e.time-bottom
+										+e.time-text._left 5000 мегаджоуль (Мдж) в
+										+e.time-icon
+											+icon('arrowRight')
+										+e.time-text._right килоджоуль (кдж)
+				+e.column.column._sidebar
+					+e.title-wrap.title-wrap
+						+e.title._book.h2.title Популярные учебники
+					+e.list-book.list-book__._vertical.js-wrapSlider(data-resolution='810', data-settings=`{
+							"smartSpeed": 500,
+							"items": 1,
+							"margin": 12,
+							"center": false,
+							"nav": false,
+							"autoWidth": true,
+							"dots": true
+						}`,)
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+			include ../layouts/bottom

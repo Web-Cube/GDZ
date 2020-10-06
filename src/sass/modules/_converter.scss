@@ -1,0 +1,122 @@
+.converter {
+	max-width: 575rem;
+	&__label {
+		display: block;
+		font-size: 9rem;
+		line-height: 11rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #6E9CA5;
+		margin-bottom: 7rem;
+	}
+	&__field {
+		&:not(:last-child) {
+			margin-bottom: 25rem;
+		}
+	}
+	&__row {
+		margin: 0 -10rem;
+	}
+	&__column {
+		padding: 0 10rem;
+		width: 50%;
+	}
+	
+	@include max-screen($large_mobile) {
+		&__row {
+			margin: 0 -5px;
+		}
+		&__column {
+			padding: 0 5px;
+		}
+	}
+}
+
+.select, .input {
+	transition: ease .3s;
+	width: 100%;
+	display: block;
+	background: #D6EEF3;
+	box-shadow: inset 1px 1px 0px #9ECAD5;
+	border-radius: 15px;
+	height: 25rem;
+	font-size: 11rem;
+	line-height: 13rem;
+	font-weight: 600;
+	padding: 0 20rem;
+	color: #195561;
+	@include max-screen($large_mobile) {
+		padding: 0 15px;
+	}
+}
+
+.input {
+	border: 0;
+	&.is-error {
+		background: #FD7171;
+		box-shadow: 1px 1px 0px #F35050;
+		color: #fff;
+	}
+	&:not(:last-child) {
+		margin-bottom: 15rem;
+	}
+}
+
+.select {
+	position: relative;
+	cursor: pointer;
+	&__head {
+		display: flex;
+		height: 25rem;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__arrow {
+		width: 14rem;
+		min-width: 14rem;
+		height: 7rem;
+		transition: ease .2s;
+		svg {
+			width: 14rem;
+			height: 7rem;
+			stroke: #1A4C56;
+			stroke-width: 1.4;
+		}
+	}
+	&__list {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		width: 100%;
+		background: #D6EEF3;
+		box-shadow: inset 1px -1px 0px #9ECAD5;
+		border-radius: 0 0 15px 15px;
+		transition: ease .2s;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-10rem);
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		height: 21rem;
+		transition: ease .2s;
+		padding: 0 20rem;
+		&:hover {
+			background: #DEF1F5;
+		}
+		@include max-screen($large_mobile) {
+			padding: 0 15px;
+		}
+	}
+	&.is-active {
+		border-radius: 15px 15px 0 0;
+		z-index: 100;
+		.select__list {
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	}
+}
