@@ -1,0 +1,161 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Орфография';
+
+block content
+	+b.translate
+		+e.wrap.wrap
+			+e.breadcrumbs.UL.breadcrumbs__
+				+e.LI.item
+					a(href="#") Главная
+				+e.LI.item
+					| Орфография
+			+e.row.row
+				+e.column.column._content
+					+e.title-wrap.title-wrap
+						+e.title.h2.title Орфография
+					+e.FORM.form.form-translate__(action="#")
+						+e.header
+							+e.nav
+								+e.nav-item.js-lang.is-active
+									| Определить язык
+							+e.select.js-select
+								input.js-select-input(type="hidden")
+								+e.select-head
+									+e.select-label.js-select-label Немецкий
+									+e.select-arrow
+										+icon('arrow')
+								+e.select-list
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский
+									+e.select-item.js-select-item Русский		
+						+e.TEXTAREA.textarea._big
+					+e.bottom-screen
+						+e.title-wrap.title-wrap
+							+e.title.h2.title Популярные языки
+						+e.bottom-list.flex
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Английский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Русский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Английский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Русский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Английский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Русский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Английский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Русский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Английский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Русский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Английский язык
+							+e.bottom-column
+								+e.A.lang._btn(href="#") Русский язык
+				+e.column.column._sidebar
+					+e.title-wrap.title-wrap
+						+e.title._book.h2.title Популярные учебники
+					+e.list-book.list-book__._vertical.js-wrapSlider(data-resolution='810', data-settings=`{
+							"smartSpeed": 500,
+							"items": 1,
+							"margin": 12,
+							"center": false,
+							"nav": false,
+							"autoWidth": true,
+							"dots": true
+						}`,)
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+						+e.A.item(hef="#")
+							+e.preview
+								+e.IMG.preview-pic.object-fit(src="/img/book.jpg")
+							+e.content
+								+e.title
+									| Украинский язык 10 класс язык 10 класс
+								+e.desc
+									p
+										strong Авторы: 
+										| П.П. Василенко П.П. Попель Л.С. Крикля
+									p
+										strong Издательство: 
+										| МОН
+			include ../layouts/bottom

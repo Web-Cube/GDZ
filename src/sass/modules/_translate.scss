@@ -62,6 +62,15 @@
 				height: 4rem;
 			}
 		}
+		&_btn {
+			font-weight: 600;
+			background: #fff;
+			display: inline-flex;
+			height: 25rem;
+			background: #D6EEF3;
+			border-radius: 15px;
+			padding: 0 20rem;
+		}
 	}
 	
 	@include max-screen($small_tablet) {
@@ -107,6 +116,10 @@
 				.icon-arrowRight {
 					display: none;
 				}
+			}
+			&_btn {
+				height: 20px;
+				padding: 0 10px;
 			}
 		}
 	}
@@ -173,6 +186,7 @@
 	&__select {
 		position: relative;
 		cursor: pointer;
+		z-index: 300;
 		&-head {
 			font-size: 11rem;
 			line-height: 13rem;
@@ -208,6 +222,7 @@
 			opacity: 0;
 			transform: translateY(-5rem);
 			transition: ease .2s;
+			margin-top: -2px;
 		}
 		&-item {
 			margin-bottom: 10rem;
@@ -266,6 +281,18 @@
 		display: none;
 	}
 	
+	&__header {
+		display: flex;
+		position: relative;
+		margin-bottom: -2px;
+		.form-translate__nav-item {
+			padding: 0 20rem;
+		}
+		.form-translate__nav {
+			width: 40%;
+		}
+	}
+	
 	@include max-screen($large_mobile) {
 		&__column {
 			width: 100%;
@@ -286,6 +313,9 @@
 		&__textarea {
 			box-shadow: inset -1px -1px 0px #EBF8FB, inset 1px 1px 0px #9ECAD5;
 			height: 80px;
+			&_big {
+				height: 160px;
+			}
 		}
 		&__head {
 			display: flex;
@@ -322,6 +352,9 @@
 				height: 18px;
 				font-size: 8px;
 				line-height: 10px;
+				&.is-active {
+					box-shadow: inset 1px 1px 0px #9ECAD5;
+				}
 			}
 		}
 		&__select {
@@ -330,6 +363,13 @@
 				font-size: 8px;
 				line-height: 10px;
 			}
+			&-arrow {
+				margin-left: 10px;
+				svg {
+					height: 5px;
+					width: 5px;
+				}
+			}
 		}
 		&__reverse {
 			top: -1px;
@@ -337,6 +377,28 @@
 			svg {
 				width: 8px;
 				height: 8px;
+			}
+		}
+		&__header {
+			justify-content: space-between;
+			.form-translate__nav {
+				width: auto;
+			}
+			.form-translate__select {
+				margin-bottom: 3px;
+				&-list {
+					padding: 15px 0 5px 15px;
+					width: 160px;
+					border-radius: 15px 0 15px 15px;
+					right: 0;
+					left: auto;
+					font-size: 8px;
+					line-height: 10px;
+				}
+				&-item {
+					margin-bottom: 10px;
+					width: 50%;
+				}
 			}
 		}
 	}
