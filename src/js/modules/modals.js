@@ -69,6 +69,20 @@ var modals = {
 		$(document).on('click', '.js-close-modal', modals.close);
 
 		$(document).on('click', '.js-modal', modals.open);
+		
+		$(".js-img-modal").magnificPopup({
+			type: "image",
+			closeOnContentClick: true,
+			closeBtnInside: false,
+			mainClass: 'css-modal-animate',
+			image: {
+				verticalFit: true,
+			},
+			zoom: {
+				enabled: false,
+				duration: 500, // don't foget to change the duration also in CSS
+			},
+		});
 
 	}
 

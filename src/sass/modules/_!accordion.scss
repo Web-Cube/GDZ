@@ -64,6 +64,17 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-left: -20rem;
+		&.is-row {
+			.accordion__list-item {
+				width: calc( 100% - 20rem );
+				.accordion__number {
+					justify-content: flex-start;
+					padding-left: 30rem;
+					position: relative;
+					border: 0;
+				}
+			}
+		}
 		&-item {
 			margin-top: 15rem;
 			margin-left: 20rem;
@@ -103,6 +114,10 @@
 		font-size: 16rem;
 		line-height: 20rem;
 		font-weight: 600;
+		transition: ease .2s;
+		&:hover {
+			background: #D7EEF3;
+		}
 		.remove-me {
 			font-weight: 500;
 			padding-left: 8rem;
@@ -129,6 +144,15 @@
 		}
 		&__list {
 			margin-left: -8px;
+			&.is-row {
+				.accordion__list-item {
+					width: calc( 100% - 8px );
+					.accordion__number {
+						padding-left: 10px;
+						height: 25px;
+					}
+				}
+			}
 			&-item {
 				width: calc( 16.66% - 8px );
 				margin-left: 8px;

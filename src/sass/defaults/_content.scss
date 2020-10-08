@@ -14,7 +14,7 @@
 }
 
 .content {
-	p, ul, ol {
+	p, ul, ol, h2 {
 		&:not(:last-child) {
 			margin-bottom: 20rem;
 		}

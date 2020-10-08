@@ -59,10 +59,12 @@ html(class=html.classList)&attributes(html.attrs)
 		block head-end
 	body(class=body.classList)&attributes(body.attrs)
 		block body-start
-		.main-wrap
-			block header
-				include header
-			block content
+		.main-wrap.fullpage
+			.fullpage__part.fullpage__part_static
+				block header
+					include header
+			.fullpage__part.fullpage__part_fluid
+				block content
 			block footer 
 				include footer
 			block popup 

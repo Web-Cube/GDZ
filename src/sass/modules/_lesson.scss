@@ -41,6 +41,7 @@
 		min-width: 178rem;
 		margin-right: 30rem;
 		float: left;
+		display: block;
 		img {
 			border-radius: 15rem;
 		}
@@ -68,6 +69,9 @@
 		border-radius: 15px;
 		margin: 70rem auto 0 auto;
 		position: relative;
+		&-img {
+			display: block;
+		}
 		&-title {
 			position: absolute;
 			left: 50%;

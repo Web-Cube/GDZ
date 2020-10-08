@@ -72,7 +72,7 @@ var defaults = {
 			var accordList = $(this);
 			accordList.find('.accordion__number').each(function () {
 				if ($.trim($(this).html()).length >= 6) {
-					$(this).parent().addClass('is-row');
+					$(this).closest('.accordion__list').addClass('is-row');
 				}
 			});
 		});

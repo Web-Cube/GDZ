@@ -1,0 +1,21 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Ошибка 404';
+
+block content
+	+e.wrap.wrap
+		+e.breadcrumbs.UL.breadcrumbs__
+			+e.LI.item
+				a(href="#") Главная
+			+e.LI.item
+				| Страница не найдена
+		+b.error404
+			+e.A.back(href="/main.html")
+				+e.back-icon
+					+icon('back')
+				+e.back-text Назад к Главной
+			+e.logo
+				img(src="/app/img/error.svg")
+			+e.H1.title Страница не найдена
+		include ../layouts/bottom

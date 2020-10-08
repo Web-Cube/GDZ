@@ -4,7 +4,7 @@
 	overflow-y: auto;
 }
 .mfp-bg{
-	background-color: rgba(0, 0, 0, 0.302);
+	background-color: rgba(0, 0, 0, 0.5);
 	opacity: 1;
 	transition: ease .7s;
 	&.mfp-ready {
@@ -16,10 +16,6 @@
 }
 .mfp-counter{
 	display: none;
-}
-
-.mfp-image-holder {
-	background-color: rgba(0, 0, 0, 0.702);
 }
 
 .mfp-content{
