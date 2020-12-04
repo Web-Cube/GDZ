@@ -129,6 +129,13 @@ var defaults = {
 			$(this).addClass('is-active');
 		});
 		
+		$('.js-title-clone').each(function(){
+			let clone = $(this).clone();
+			$('.js-title-move').html(clone);
+			$(this).remove();
+			
+		});
+		
 
 	}
 }

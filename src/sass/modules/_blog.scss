@@ -162,7 +162,7 @@
 			}
 		}
 		&__headline {
-			margin-top: 20px;
+			margin-top: 0;
 		}
 		&__list {
 			margin-left: 0;
@@ -171,6 +171,15 @@
 				width: 100%;
 				margin-left: 0;
 			}
+		}
+		&__title-wrap {
+			padding-bottom: 5px;
+		}
+		.column_sidebar {
+			margin-top: 0;
+		}
+		.column_content {
+			padding-top: 20px;
 		}
 	}
 }

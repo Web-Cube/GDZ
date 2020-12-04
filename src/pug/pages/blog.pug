@@ -11,37 +11,8 @@ block content
 					a(href="#") Главная
 				+e.LI.item
 					| Украинский язык 10 класс, П.П. Попель, Л.С. Крикля
-			+e.title-wrap.title-wrap.m-visible
-				+e.H1.headline.h1.title Английский язык 9 класс
 			+e.row.row
 				+e.column.column._sidebar
-					+e.cat.cat__.m-visible
-						+e.item
-							+e.head
-								+e.title Предметы
-								+e.arrow
-									+icon('arrow')
-							+e.list
-								include ../layouts/subjects
-					+e.cat.cat__.m-visible
-						+e.item
-							+e.head
-								+e.title Классы
-								+e.arrow
-									+icon('arrow')
-							+e.list
-								+e.A.subject(href="#")
-									+e.subject-text 1 класс
-								+e.A.subject(href="#")
-									+e.subject-text 2 класс
-								+e.A.subject(href="#")
-									+e.subject-text 3 класс
-								+e.A.subject(href="#")
-									+e.subject-text 4 класс
-								+e.A.subject(href="#")
-									+e.subject-text 5 класс
-								+e.A.subject(href="#")
-									+e.subject-text 6 класс
 					+e.cat.cat__.m-hidden
 						+e.item
 							+e.head
@@ -86,8 +57,16 @@ block content
 							+e.list
 								include ../layouts/subjects
 				+e.column.column._content
-					+e.title-wrap.title-wrap.m-hidden
-							+e.H1.headline.h1.title Английский язык 9 класс
+					+e.title-wrap.title-wrap
+						+e.H1.headline.h1.title Английский язык 9 класс
+					+e.cat.cat__.m-visible
+						+e.item
+							+e.head
+								+e.title Предметы
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								include ../layouts/subjects
 					+e.list.list-book__._horizontal.flex._justify
 						+e.A.item(hef="#")
 							+e.preview

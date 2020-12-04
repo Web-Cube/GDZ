@@ -14,7 +14,7 @@
 }
 
 .content {
-	p, ul, ol, h2 {
+	p, ul, ol, h2, h1 {
 		&:not(:last-child) {
 			margin-bottom: 20rem;
 		}
@@ -121,6 +121,11 @@
 	line-height: 22/18*1;
 }
 
+.content h1 {
+	font-size: 24rem;
+	line-height: 24/18*1;
+}
+
 .h2,
 .content h2 {
 	font-size: 18rem;
@@ -151,6 +156,11 @@
 	.content h1 {
 		font-size: 12px;
 		line-height: 15px;
+	}
+	
+	.content h1 {
+		font-size: 16px;
+		line-height: 20px;
 	}
 
 	.h2,
